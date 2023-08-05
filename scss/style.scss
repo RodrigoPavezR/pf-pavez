@@ -1,0 +1,16 @@
+/**variable y mixins**/
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+/**reset y tipografias**/
+@import "./base/reset";
+@import "./base/typo";
+
+/**codigo principal**/
+@import "./layouts/header-index";
+
+
+/**media querry
+Desktop first - en orden decreciente
+Mobile first - en orden creciente
+**/
