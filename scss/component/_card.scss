@@ -1,0 +1,23 @@
+.card-img{
+    width: 17.5rem;
+    height: 23.5rem;
+    overflow: hidden;
+    border-radius: 3rem;  
+}
+
+.card-h3{    
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1875rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    color: black 
+    
+    
+}
+
+.cards{
+    margin: 2.5rem;    
+    box-shadow: 1.25rem black;
+    transition: 5s;
+}
