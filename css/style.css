@@ -1,6 +1,7 @@
 /**variable y mixins**/
 /**reset y tipografias**/
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +10,40 @@
 
 /**fonts logo**/
 /**  font-family: 'Exo 2', sans-serif; **/
+/**font h1 pages**/
+/**font-family: 'Inter', sans-serif;**/
 /**color Letras logo
 #C49958;**/
 /**codigo principal**/
+.header-catalogo {
+  width: 100%;
+}
+
+.fondo-catalogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  position: relative;
+}
+.fondo-catalogo img {
+  width: 100%;
+}
+.fondo-catalogo h1 {
+  position: absolute;
+  bottom: 3.4375rem;
+  left: 4.6875rem;
+  font-style: italic;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5625rem;
+  text-shadow: 0.125rem 0.125rem black;
+  background: none;
+}
+
 .header-index {
   background-color: black;
   display: flex;
@@ -48,7 +80,7 @@
 
 .card {
   width: 17.8125rem;
-  height: 26.5625rem;
+  height: auto;
   margin: 1.25rem;
   overflow: hidden;
   border-radius: 4.0625rem;
@@ -66,7 +98,7 @@
   text-align: center;
 }
 .card .contenido-card a {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Exo 2", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -83,7 +115,7 @@
 }
 
 .contenido-card a:hover {
-  background: #dfbb84;
+  background: #e1e1e1;
   color: black;
 }
 
@@ -96,6 +128,97 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+footer p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.header.nosotros {
+  width: 100%;
+}
+
+.fondo-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  position: relative;
+}
+.fondo-nosotros img {
+  width: 100%;
+}
+.fondo-nosotros h1 {
+  position: absolute;
+  bottom: 3.4375rem;
+  left: 4.6875rem;
+  font-style: italic;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5625rem;
+  text-shadow: 0.125rem 0.125rem black;
+  background: none;
+}
+
+.header-contacto {
+  width: 100%;
+}
+
+.fondo-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  position: relative;
+}
+.fondo-contacto img {
+  width: 100%;
+}
+.fondo-contacto h1 {
+  position: absolute;
+  bottom: 3.4375rem;
+  left: 4.6875rem;
+  font-style: italic;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5625rem;
+  text-shadow: 0.125rem 0.125rem black;
+  background: none;
+}
+
+.header-hablemos {
+  width: 100%;
+}
+
+.fondo-hablemos {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  position: relative;
+}
+.fondo-hablemos img {
+  width: 100%;
+}
+.fondo-hablemos h1 {
+  position: absolute;
+  bottom: 3.4375rem;
+  left: 4.6875rem;
+  font-style: italic;
+  font-style: italic;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5625rem;
+  text-shadow: 0.125rem 0.125rem black;
+  background: none;
 }
 
 /**media querry
