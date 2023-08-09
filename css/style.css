@@ -1,7 +1,8 @@
 /**variable y mixins**/
+/**H1 de los html pages**/
 /**reset y tipografias**/
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@
 .fondo-catalogo {
   display: flex;
   flex-direction: row;
+  flex-wrap: initial;
   justify-content: left;
   align-items: end;
   position: relative;
@@ -33,7 +35,6 @@
   position: absolute;
   bottom: 3.4375rem;
   left: 4.6875rem;
-  font-style: italic;
   font-style: italic;
   font-size: 2.5rem;
   color: white;
@@ -72,23 +73,26 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
+/**CARDS INDEX**/
 .card {
   width: 17.8125rem;
-  height: auto;
   margin: 1.25rem;
   overflow: hidden;
   border-radius: 4.0625rem;
-  background: none;
   box-shadow: 0rem 0.125rem 0.625rem 0rem;
   transition: all 300ms ease;
   margin: 3.125rem;
   display: flex;
+}
+.card:hover {
+  box-shadow: 0.3125rem 0.3125rem 0.4375rem 0.25rem;
+  transform: translateY(-3%);
 }
 .card img {
   width: 100%;
@@ -108,15 +112,38 @@
   border-radius: 1.875rem;
   transition: all 400ms ease;
 }
-
-.card:hover {
-  box-shadow: 0.3125rem 0.3125rem 0.4375rem 0.25rem;
-  transform: translateY(-3%);
-}
-
-.contenido-card a:hover {
+.card .contenido-card a:hover {
   background: #e1e1e1;
   color: black;
+}
+
+/**CARDS CATALOGO**/
+.card-catalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-catalogo h3 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.card-catalogo p {
+  font-size: 1rem;
+  text-align: center;
+}
+.card-catalogo img {
+  width: 13.4375rem;
+  overflow: hidden;
+  border-radius: 4.0625rem;
+  box-shadow: 0rem 0.125rem 0.625rem 0rem;
+  transition: all 300ms ease;
+  margin: 3.75rem;
+}
+.card-catalogo img:hover {
+  box-shadow: 0.3125rem 0.3125rem 0.4375rem 0.25rem;
+  transform: translateY(-3%);
 }
 
 footer {
@@ -153,7 +180,6 @@ footer p {
   bottom: 3.4375rem;
   left: 4.6875rem;
   font-style: italic;
-  font-style: italic;
   font-size: 2.5rem;
   color: white;
   font-family: "Inter", sans-serif;
@@ -181,7 +207,6 @@ footer p {
   position: absolute;
   bottom: 3.4375rem;
   left: 4.6875rem;
-  font-style: italic;
   font-style: italic;
   font-size: 2.5rem;
   color: white;
@@ -211,7 +236,6 @@ footer p {
   bottom: 3.4375rem;
   left: 4.6875rem;
   font-style: italic;
-  font-style: italic;
   font-size: 2.5rem;
   color: white;
   font-family: "Inter", sans-serif;
@@ -221,9 +245,103 @@ footer p {
   background: none;
 }
 
+/**Main catalogo con GRID**/
+.main-catalogo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.main-nosotros {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-nosotros h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.1875rem;
+  margin-left: 3.125rem;
+}
+.main-nosotros p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
+  margin-left: 3.125rem;
+  line-height: 3.75rem;
+}
+
+.estructura {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-contacto {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-contacto h3 {
+  font-size: 24px;
+  margin-bottom: 2.8125rem;
+  align-self: flex-start;
+  margin-left: 25%;
+}
+.main-contacto form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.main-contacto form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 1.25rem;
+  background-color: #bfbfbf;
+}
+.main-contacto form input::placeholder {
+  color: black;
+}
+.main-contacto form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 1.25rem;
+  background-color: #bfbfbf;
+}
+.main-contacto form textarea::placeholder {
+  color: black;
+}
+
 /**media querry
 Desktop first - en orden decreciente
 Mobile first - en orden creciente
 **/
+/**Index**/
+@media (max-width: 768px) {
+  .card {
+    width: 11.875rem;
+  }
+  .card .contenido-card a {
+    font-size: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

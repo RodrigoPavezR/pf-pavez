@@ -15,9 +15,14 @@
 @import "./layouts/header-nosotros";
 @import "./layouts/header-contacto";
 @import "./layouts/header-hablemos";
+@import "./layouts/main-catalogo";
+@import "./layouts/main-nosotros";
+@import "./layouts/main-contacto";
 
 
 /**media querry
 Desktop first - en orden decreciente
 Mobile first - en orden creciente
 **/
+
+@import "./layouts/media/media768";
