@@ -5,13 +5,11 @@
 .fondo-catalogo {
     display: flex;
     flex-direction: row;
-    flex-wrap: initial;
-    justify-content: left;
-    align-items: end;
     position: relative;
 
     img {
         width: 100%;
+        
     }
 
     h1 {

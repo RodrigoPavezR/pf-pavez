@@ -18,6 +18,8 @@
 @import "./layouts/main-catalogo";
 @import "./layouts/main-nosotros";
 @import "./layouts/main-contacto";
+@import "./layouts/main-hablemos";
+
 
 
 /**media querry
@@ -25,4 +27,10 @@ Desktop first - en orden decreciente
 Mobile first - en orden creciente
 **/
 
+@import "./layouts/media/media1024";
+@import "./layouts/media/media960";
 @import "./layouts/media/media768";
+@import "./layouts/media/media640";
+@import "./layouts/media/media480";
+@import "./layouts/media/media375";
+@import "./layouts/media/media320";

@@ -14,7 +14,9 @@
 /**font h1 pages**/
 /**font-family: 'Inter', sans-serif;**/
 /**color Letras logo
-#C49958;**/
+#C49958;
+
+**/
 /**codigo principal**/
 .header-catalogo {
   width: 100%;
@@ -23,9 +25,6 @@
 .fondo-catalogo {
   display: flex;
   flex-direction: row;
-  flex-wrap: initial;
-  justify-content: left;
-  align-items: end;
   position: relative;
 }
 .fondo-catalogo img {
@@ -82,7 +81,6 @@
 /**CARDS INDEX**/
 .card {
   width: 17.8125rem;
-  margin: 1.25rem;
   overflow: hidden;
   border-radius: 4.0625rem;
   box-shadow: 0rem 0.125rem 0.625rem 0rem;
@@ -128,15 +126,18 @@
 .card-catalogo h3 {
   font-size: 1.25rem;
   text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  letter-spacing: 0.1875rem;
 }
 .card-catalogo p {
   font-size: 1rem;
   text-align: center;
 }
 .card-catalogo img {
-  width: 13.4375rem;
+  width: 11.875rem;
   overflow: hidden;
-  border-radius: 4.0625rem;
+  border-radius: 2.8125rem;
   box-shadow: 0rem 0.125rem 0.625rem 0rem;
   transition: all 300ms ease;
   margin: 3.75rem;
@@ -149,7 +150,7 @@
 footer {
   background-color: gainsboro;
   width: 100%;
-  height: 8rem;
+  height: 5rem;
   text-align: center;
   color: black;
   display: flex;
@@ -159,6 +160,7 @@ footer {
 footer p {
   font-size: 1rem;
   font-style: italic;
+  margin: 1.25rem;
 }
 
 .header.nosotros {
@@ -252,6 +254,7 @@ footer p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
+  gap: 0.75rem;
 }
 
 .main-nosotros {
@@ -295,10 +298,13 @@ footer p {
   justify-content: center;
 }
 .main-contacto h3 {
+  font-family: "Inter", sans-serif;
   font-size: 24px;
+  font-style: italic;
+  letter-spacing: 0.125rem;
   margin-bottom: 2.8125rem;
   align-self: flex-start;
-  margin-left: 25%;
+  margin-left: 25.5%;
 }
 .main-contacto form {
   width: 50%;
@@ -306,8 +312,7 @@ footer p {
   flex-direction: column;
 }
 .main-contacto form label {
-  font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.625rem;
 }
 .main-contacto form input {
   padding: 10px;
@@ -318,6 +323,10 @@ footer p {
 }
 .main-contacto form input::placeholder {
   color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.3125rem;
 }
 .main-contacto form textarea {
   padding: 10px;
@@ -328,19 +337,129 @@ footer p {
 }
 .main-contacto form textarea::placeholder {
   color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.3125rem;
+}
+
+.main-hablemos {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-hablemos div {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.main-hablemos a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  color: black;
+  font-style: italic;
+  letter-spacing: 0.3125rem;
+}
+.main-hablemos p {
+  margin-left: 4.5%;
+}
+.main-hablemos .telefono {
+  color: #7D1010;
+  font-size: 1.25rem;
 }
 
 /**media querry
 Desktop first - en orden decreciente
 Mobile first - en orden creciente
 **/
-/**Index**/
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .card {
-    width: 11.875rem;
+    width: 12.5rem;
+    margin: 1.25rem;
   }
-  .card .contenido-card a {
+}
+@media (max-width: 960px) {
+  .main-catalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 640px) {
+  .card-catalogo img {
+    width: 6.875rem;
+    margin-top: 1.25rem;
+  }
+  .card-catalogo h3 {
     font-size: 1rem;
+  }
+  .card-catalogo p {
+    font-size: 0.8125rem;
+  }
+}
+@media (max-width: 480px) {
+  .header-index {
+    height: 11.875rem;
+  }
+  .header-index img {
+    width: 7.5rem;
+  }
+  .header-index h1 {
+    font-size: 1.875rem;
+  }
+  .header-index h2 {
+    font-size: 1.375rem;
+  }
+  .fondo-catalogo h1 {
+    font-size: 1.875rem;
+    bottom: 1.25rem;
+    left: 1.875rem;
+    letter-spacing: 0.625rem;
+  }
+  .main-catalogo {
+    grid-template-columns: 1fr;
+    background-color: #71513A;
+  }
+  .fondo-nosotros h1 {
+    font-size: 1.875rem;
+    bottom: 1.25rem;
+    left: 1.875rem;
+    letter-spacing: 0.625rem;
+  }
+  .main-nosotros h3 {
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+  }
+  .main-nosotros p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .fondo-contacto h1 {
+    font-size: 1.875rem;
+    bottom: 1.25rem;
+    left: 1.875rem;
+    letter-spacing: 0.625rem;
+  }
+  .fondo-hablemos h1 {
+    font-size: 1.875rem;
+    bottom: 1.25rem;
+    left: 1.875rem;
+    letter-spacing: 0.625rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-nosotros h3 {
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
+  }
+  .main-nosotros p {
+    line-height: 2.5rem;
   }
 }
 

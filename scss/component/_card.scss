@@ -1,7 +1,6 @@
 /**CARDS INDEX**/
 .card {
     width: 17.8125rem;
-    margin: 1.25rem;
     overflow: hidden;
     border-radius: 4.0625rem;    
     box-shadow: 0rem .125rem .625rem 0rem;
@@ -46,15 +45,9 @@
 
 
 
-
-
-
 /**CARDS CATALOGO**/
 
-
-
 .card-catalogo{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,19 +57,20 @@
     h3 {
         font-size: 1.25rem;
         text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-style: italic;
+        letter-spacing: .1875rem;
     }
     
     p{
         font-size: 1rem;
         text-align: center;
-        
     }
 
     img {
-    width: 13.4375rem;
-    
+    width: 11.875rem;    
     overflow: hidden;
-    border-radius: 4.0625rem;
+    border-radius: 2.8125rem;
     box-shadow: 0rem .125rem .625rem 0rem;
     transition: all 300ms ease;
     margin: 3.75rem;

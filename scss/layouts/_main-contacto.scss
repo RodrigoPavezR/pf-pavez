@@ -6,13 +6,14 @@
     align-items: center;
     justify-content: center;
 
-
-
     h3 {
+        font-family: 'Inter', sans-serif;
         font-size: 24px;
+        font-style: italic;
+        letter-spacing: .125rem;
         margin-bottom: 2.8125rem;
         align-self: flex-start;
-        margin-left: 25%;
+        margin-left: 25.5%;
     }
 
     form {
@@ -21,8 +22,7 @@
         flex-direction: column;
 
         label {
-            font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: .625rem;
         }
 
         input{
@@ -33,6 +33,10 @@
             background-color: #bfbfbf;
             &::placeholder{
                 color: black;
+                font-family: 'Inter', sans-serif;
+                font-size: 1rem;
+                font-style: italic;
+                letter-spacing: .3125rem;
             }
         }
         
@@ -44,6 +48,11 @@
             background-color: #bfbfbf;
             &::placeholder{
                 color: black;
+                font-family: 'Inter', sans-serif;
+                font-size: 1rem;
+                font-style: italic;
+                letter-spacing: .3125rem;
+                
             }
         }
     }
