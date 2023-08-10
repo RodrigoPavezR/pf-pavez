@@ -423,7 +423,11 @@ Mobile first - en orden creciente
   }
   .main-catalogo {
     grid-template-columns: 1fr;
-    background-color: #71513A;
+    background-color: #bb8f70;
+  }
+  .card-catalogo img {
+    width: 9rem;
+    margin: 1.5rem;
   }
   .fondo-nosotros h1 {
     font-size: 1.875rem;

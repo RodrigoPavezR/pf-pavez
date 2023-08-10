@@ -22,7 +22,14 @@
 
     .main-catalogo{
         grid-template-columns: 1fr;
-        background-color:#71513A ;
+        background-color:#bb8f70 ;
+    }
+    .card-catalogo{
+        img{
+            width: 9rem;
+            margin: 1.5rem;
+        }
+
     }
 
     .fondo-nosotros{
