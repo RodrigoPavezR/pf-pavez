@@ -3,28 +3,10 @@
 }
 
 .fondo-hablemos {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: end;
-    position: relative;
-
-    img {
-        width: 100%;
-    }
-
-    h1 {
-        position: absolute;
-        bottom: 3.4375rem;
-        left: 4.6875rem;
-        font-style: $style-h1;
-        font-size: 2.5rem;
-        color: $color-h1;
-        font-family: $font-h1;
-        font-weight: bold;
-        letter-spacing: 1.5625rem;
-        text-shadow: .125rem .125rem black;
-        background: none;
+    @extend .fondo-catalogo;
+    h1{
+    color: $titulo-contacto-hablemos;
+    text-shadow: $shadow-contacto-hablemos;
     }
 }
 

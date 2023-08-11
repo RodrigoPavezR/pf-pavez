@@ -22,30 +22,30 @@
   width: 100%;
 }
 
-.fondo-catalogo {
+.fondo-catalogo, .fondo-hablemos, .fondo-contacto, .fondo-nosotros {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.fondo-catalogo img {
+.fondo-catalogo img, .fondo-hablemos img, .fondo-contacto img, .fondo-nosotros img {
   width: 100%;
 }
-.fondo-catalogo h1 {
+.fondo-catalogo h1, .fondo-hablemos h1, .fondo-contacto h1, .fondo-nosotros h1 {
   position: absolute;
   bottom: 3.4375rem;
   left: 4.6875rem;
   font-style: italic;
   font-size: 2.5rem;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Inter", sans-serif;
   font-weight: bold;
   letter-spacing: 1.5625rem;
-  text-shadow: 0.125rem 0.125rem black;
+  text-shadow: 0.125rem 0.125rem rgb(0, 0, 0);
   background: none;
 }
 
 .header-index {
-  background-color: black;
+  background: linear-gradient(153deg, rgb(93, 53, 23) 0%, rgb(0, 0, 0) 49%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,84 +167,22 @@ footer p {
   width: 100%;
 }
 
-.fondo-nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: end;
-  position: relative;
-}
-.fondo-nosotros img {
-  width: 100%;
-}
-.fondo-nosotros h1 {
-  position: absolute;
-  bottom: 3.4375rem;
-  left: 4.6875rem;
-  font-style: italic;
-  font-size: 2.5rem;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.5625rem;
-  text-shadow: 0.125rem 0.125rem black;
-  background: none;
-}
-
 .header-contacto {
   width: 100%;
 }
 
-.fondo-contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: end;
-  position: relative;
-}
-.fondo-contacto img {
-  width: 100%;
-}
 .fondo-contacto h1 {
-  position: absolute;
-  bottom: 3.4375rem;
-  left: 4.6875rem;
-  font-style: italic;
-  font-size: 2.5rem;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.5625rem;
-  text-shadow: 0.125rem 0.125rem black;
-  background: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.125rem 0.125rem rgb(255, 255, 255);
 }
 
 .header-hablemos {
   width: 100%;
 }
 
-.fondo-hablemos {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: end;
-  position: relative;
-}
-.fondo-hablemos img {
-  width: 100%;
-}
 .fondo-hablemos h1 {
-  position: absolute;
-  bottom: 3.4375rem;
-  left: 4.6875rem;
-  font-style: italic;
-  font-size: 2.5rem;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.5625rem;
-  text-shadow: 0.125rem 0.125rem black;
-  background: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.125rem 0.125rem rgb(255, 255, 255);
 }
 
 /**Main catalogo con GRID**/
@@ -315,8 +253,8 @@ footer p {
   margin-bottom: 0.625rem;
 }
 .main-contacto form input {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 0.625rem;
+  margin-bottom: 0.9375rem;
   border: 1px solid #ccc;
   border-radius: 1.25rem;
   background-color: #bfbfbf;
@@ -329,8 +267,8 @@ footer p {
   letter-spacing: 0.3125rem;
 }
 .main-contacto form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 0.625rem;
+  margin-bottom: 0.9375rem;
   border: 1px solid #ccc;
   border-radius: 1.25rem;
   background-color: #bfbfbf;
@@ -415,7 +353,7 @@ Mobile first - en orden creciente
   .header-index h2 {
     font-size: 1.375rem;
   }
-  .fondo-catalogo h1 {
+  .fondo-catalogo h1, .fondo-nosotros h1, .fondo-contacto h1, .fondo-hablemos h1 {
     font-size: 1.875rem;
     bottom: 1.25rem;
     left: 1.875rem;
